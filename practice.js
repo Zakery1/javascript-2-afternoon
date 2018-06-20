@@ -15,8 +15,10 @@
 */
 
 //Code here
-
-
+const me = {
+  name:"Zak",
+  age:28
+  }
 
 ////////// PROBLEM 2 //////////
 
@@ -26,6 +28,15 @@
 */
 
 //Code here
+const favoriteThings = {
+  band:"the beatles",
+  food:"pizza",
+  person:"Jesus",
+  book:"LOTR",
+  movie:"Forrest Gump",
+  holiday:"Thanksgiving"
+}
+
 
 
 
@@ -34,7 +45,8 @@
 */
 
 //Code here
-
+favoriteThings.car = "Maxima";
+favoriteThings.brand = "Gucci";
 
 
 /*
@@ -42,7 +54,8 @@
 */
 
 //Code here
-
+favoriteThings.food = 'Chicken Nuggets';
+favoriteThings.book = 'Harry Potter'
 
 
 ////////// PROBLEM 3 //////////
@@ -56,6 +69,10 @@
 */
 
 //Code here
+const backPack = {};
+const item = 'firstPocket';
+backPack[item] = 'chapstick';
+backPack.color = 'grey';
 
 
 
@@ -74,6 +91,7 @@ Instead, console.log your whole backPack object and then check out the console.
 */
 
 //Code here
+console.log(backPack);
 
 
 
@@ -98,7 +116,8 @@ var user2 = {
 
 //Code Here
 
-
+user2.name = 'Tyler S. McGinnis';
+user2.email = 'tyler.mcginnis@devmounta.in'
 
 
 
@@ -121,7 +140,7 @@ var user2 = {
 
 //Code Here
 
-
+const methodCollection = {};
 
 /*
   Now add two methods (functions that are properties on objects) to your methodCollection object. 
@@ -129,7 +148,13 @@ var user2 = {
 */
 
 //Code Here
+methodCollection.alertHello = function(){
+  alert('hello')
+}
 
+methodCollection.logHello = function(){
+  console.log('hello')
+}
 
 
 /*
@@ -137,7 +162,6 @@ var user2 = {
 */
 
 //Code Here
-
 
 
 ////////// PROBLEM 6 //////////
@@ -148,7 +172,13 @@ var user2 = {
 */
 
 //Code Here
-
+function makePerson(name, birthday, ssn){
+  return obj = {
+    name,
+    birthday,
+    ssn
+  }
+}
 
 
 ////////// PROBLEM 7 //////////
@@ -160,4 +190,12 @@ var user2 = {
 
 //Code Here
 
+const makeCard = function (cardNumber, expirationDate, securityCode){
+  return obj = {
+    cardNumber,
+    expirationDate,
+    securityCode
+  }
+  return obj
+}
 
